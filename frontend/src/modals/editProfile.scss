@@ -1,0 +1,22 @@
+@import '../sass/abstracts.scss';
+.modal-pfp {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 2px 4px darkslategray;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.flex-center {
+  @include flexCenter();
+}
+
+.my-btn {
+  @include myBtn();
+}

@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($direction, $justify: center, $align: center, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin backgroundColor {
+  background: linear-gradient(
+    90deg,
+    hsla(172, 50%, 46%, 1) 0%,
+    hsla(110, 100%, 84%, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+@mixin myBtn {
+  background-color: $primary-color !important;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0 2px 4px darkslategray;
+  &:hover {
+    background-color: $primary-color;
+  }
+  &:active {
+    background-color: $primary-color !important;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
+}
+
+@mixin logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

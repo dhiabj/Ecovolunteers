@@ -1,0 +1,147 @@
+@import '../../sass/abstracts';
+.profile-cover {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+
+  .cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .profile-picture {
+    top: calc(100% - 100px);
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .camera-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include flexCenter();
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  .add-cover-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    @include myBtn();
+    box-shadow: none;
+    z-index: 1;
+  }
+}
+
+.profile-info {
+  height: 140px;
+  width: 100%;
+  background-color: #fff;
+  @include flex(column);
+  .position {
+    margin-left: 1rem;
+    position: absolute;
+    left: 30%;
+  }
+  .profile-name {
+    display: flex;
+    .name-group {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      .profile-username {
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: lowercase;
+      }
+    }
+    .badge {
+      height: 50px;
+    }
+  }
+  .contact-info {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .contact-text {
+      margin-right: 20px;
+      font-size: 16px;
+      color: #504e4e;
+    }
+  }
+}
+
+.dot-toggle {
+  background-color: transparent !important;
+  border: none;
+  color: black;
+  &:hover,
+  &:focus,
+  &:active {
+    color: black;
+    border: none;
+    outline: none;
+  }
+  &::after {
+    content: none;
+  }
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 16px;
+  @include flexCenter();
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.follow-btn {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  font-weight: bold;
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}

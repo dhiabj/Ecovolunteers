@@ -1,0 +1,87 @@
+@import '../../sass/abstracts';
+
+.club-left-bar {
+  flex: 3;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  background-color: #fff;
+  color: #000;
+  margin: 20px;
+  border-radius: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .club-container {
+    padding: 20px;
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    .club-item {
+      border-radius: 0.5rem;
+      padding: 20px;
+      margin: 10px 0px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+
+      @include flex(row, flex-start, center);
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25%;
+      }
+      .club-name-container {
+        @include flex(column, flex-start, flex-start);
+        margin-left: 10px;
+        .club-name-box {
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: #999;
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .view-profile-btn {
+      width: 100%;
+      color: $primary-color;
+      margin-right: 10px;
+      border: 1px solid $primary-color;
+      .icon-color {
+        color: $primary-color;
+      }
+    }
+
+    .button-group {
+      @include flex(row, space-between, center);
+      .leave-club-btn {
+        width: 100%;
+        color: $primary-color;
+        margin-right: 10px;
+        border: 1px solid $primary-color;
+        .icon-color {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

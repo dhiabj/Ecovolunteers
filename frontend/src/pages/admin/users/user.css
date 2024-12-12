@@ -1,0 +1,81 @@
+.user-details {
+    background-color: #2f4050;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .user-details-heading {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3aaf9f;
+  }
+  
+  .user-details-item {
+    width: 100px; /* or any other fixed width that suits your design */
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-details-item label {
+    width: 100px; /* or any other fixed width that suits your design */
+    text-align: center;
+    font-weight: bold;
+    /*margin-right: 10px;*/
+    margin-bottom: 5px;
+    color: rgb(248, 239, 239);
+    font-size: 16px;
+  }
+  
+  .user-details-item p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(183, 164, 164);
+  }
+  
+  .user-details-delete-button {
+    background-color: #ff3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .user-details-delete-button:hover {
+    background-color: #e62e2e;
+  }
+  
+  .user-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .user-details-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .user-details-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  

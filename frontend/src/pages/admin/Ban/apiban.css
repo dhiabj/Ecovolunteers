@@ -1,0 +1,45 @@
+/* apiban.css */
+
+.ab form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .ab label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .ab  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .ab  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ab button:hover {
+    background-color: #0062cc;
+  }
+  
+  .ab p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(9, 8, 8);
+    font-weight: bold;
+  }
+  
+  

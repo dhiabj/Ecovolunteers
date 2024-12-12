@@ -1,0 +1,13 @@
+@import '../sass/abstracts.scss';
+
+.delete-modal-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #f44336;
+  width: 100%;
+}
+
+.center-column {
+  @include flex(column);
+}

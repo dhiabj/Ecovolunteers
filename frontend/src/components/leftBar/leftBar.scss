@@ -1,0 +1,74 @@
+.leftBar {
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  background-color: #fff;
+  color: #000;
+  margin-right: 20px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    padding: 20px;
+
+    hr {
+      margin: 20px 0px;
+      border: none;
+      height: 0.5px;
+      background-color: lightgray;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        font-size: 12px;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          color: #3aaf9f;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          // border-radius: 100%;
+          object-fit: cover;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &:hover {
+          color: #3aaf9f;
+        }
+
+        img {
+          width: 30px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
